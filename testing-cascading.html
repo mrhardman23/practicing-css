@@ -3,27 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internal CSS</title>
+    <title>Testing Cascading</title>
+    <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
     <style>
       body {
-        background-color: #e0ffff;
-        color: #15223b;
+        color: darkslategrey;
       }
       h1 {
-        text-align: center;
-        font-size: 40px;
-      }
-      h2 {
-        color: navy;
-        background-color: khaki;
-        font-style: italic;
-      }
-      p {
-        font-size: 24px;
+        text-align: right;
       }
     </style>
   </head>
-  <body>
+  <body style="color: darkmagenta">
     <nav>
       <ul>
         <li><a href="index.html" class="nav-link">Inline CSS</a></li>
@@ -41,12 +32,13 @@
       </ul>
     </nav>
     <header>
-      <h1>Internal CSS</h1>
+      <h1>Testing Cascading</h1>
     </header>
     <main>
       <p>
-        This paragraph will show the effects of internal CSS. The other
-        paragraphs will show the effects of inline CSS.
+        This page will show the effects of the cascading effect of CSS. My next
+        two paragraphs have inline styling, which will overwrite any external or
+        internal CSS that applies to those elements.
       </p>
       <p style="color: indigo; font-size: 28px; font-weight: bolder">
         Mr. "Meanie-Bo-Beanie" Hardman

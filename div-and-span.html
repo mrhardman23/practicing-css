@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divs and Spans</title>
+    <style>
+      body {
+        background-color: #e0ffff;
+        color: #15223b;
+      }
+      nav ul {
+        list-style: none;
+      }
+      nav ul li {
+        margin: 10px;
+        font-size: 20px;
+        display: inline-block;
+      }
+      nav .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px solid black;
+        background-color: #191970;
+        color: #f5f5ff;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+      div {
+        background-color: whitesmoke;
+        height: 180px;
+        width: auto;
+      }
+      h2 {
+        color: navy;
+        background-color: khaki;
+        font-style: italic;
+      }
+      p {
+        font-size: 24px;
+      }
+      #styled-by-id {
+        font-family: Georgia, "Cambria", serif;
+        font-weight: bold;
+      }
+      span {
+        background-color: #222222;
+        color: whitesmoke;
+        font-style: italic;
+        padding: 2px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Inline CSS</a></li>
+        <li><a href="internal-css.html" class="nav-link">Internal CSS</a></li>
+        <li><a href="external-css.html" class="nav-link">External CSS</a></li>
+        <li>
+          <a href="testing-cascading.html" class="nav-link"
+            >Testing Cascading</a
+          >
+        </li>
+        <li>
+          <a href="classes-and-ids.html" class="nav-link">Classes and IDs</a>
+        </li>
+        <li><a href="div-and-span.html" class="nav-link">Divs and Spans</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Divs and Spans</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          This paragraph will show the effects of internal CSS. The other
+          paragraphs will show the effects of inline CSS.
+        </p>
+        <div>
+          <p style="color: indigo; font-size: 28px; font-weight: bolder">
+            Mr. "Meanie-Bo-Beanie" Hardman
+          </p>
+          <p
+            style="
+              color: midnightblue;
+              text-align: right;
+              text-decoration: underline;
+            ">
+            Web Development
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>PC Hardware</h2>
+        <p>
+          Learning how all the different components work together to allow a
+          computer to function.
+        </p>
+        <h2>Web Development</h2>
+        <p>Learning about how to properly make websites look good!</p>
+      </section>
+      <section>
+        <p id="styled-by-id">
+          This paragraph will show the effect of giving an element an ID and
+          <span>styling</span> that ID.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
