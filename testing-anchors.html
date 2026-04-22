@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inline CSS</title>
+    <title>Testing Anchor Pseudo-Classes</title>
+    <style>
+      body {
+        background-color: #121212;
+        /* This did not get applied to my a tag */
+        color: #ededed;
+
+        font-size: 3rem;
+      }
+
+      a:link {
+        /* This will get applied to my a tag. */
+        color: #ededed;
+      }
+
+      a:visited {
+        color: yellow;
+      }
+
+      a:hover,
+      a:focus {
+        color: lightblue;
+      }
+
+      a:active {
+        color: lightcoral;
+      }
+    </style>
   </head>
-  <body style="background-color: #e0ffff; color: #15223b">
+  <body>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -18,24 +45,10 @@
         <li><a href="backgrounds-and-text.html">Backgrounds and Text</a></li>
       </ul>
     </nav>
-    <header>
-      <h1 style="text-align: center; font-size: 40px">Inline CSS</h1>
-    </header>
     <main>
-      <p style="font-size: 24px">
-        This page shows the effects of adding inline CSS to HTML tags.
-      </p>
-      <p style="color: indigo; font-size: 28px; font-weight: bolder">
-        Mr. "Meanie-Bo-Beanie" Hardman
-      </p>
-      <p
-        style="
-          color: midnightblue;
-          text-align: right;
-          text-decoration: underline;
-        ">
-        Web Development
-      </p>
+      <a href="https://www.microsoft.com" target="_blank"
+        >Go to Microsoft.com</a
+      >
     </main>
   </body>
 </html>
