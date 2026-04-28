@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing Anchor Pseudo-Classes</title>
     <style>
+      html {
+        font-size: 62.5%;
+      }
       body {
         background-color: #121212;
         /* This did not get applied to my a tag */
         color: #ededed;
 
-        font-size: 3rem;
+        font-size: 2rem;
+      }
+
+      nav ul {
+        padding-left: 0;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0.75%;
+        display: inline-block;
+      }
+      nav ul li a:link {
+        display: inline-block;
+        width: 100%;
+        padding: 0.5rem;
+        border: 2px solid black;
+        background-color: #191970;
+        color: #f5f5ff;
+        text-align: center;
+      }
+      nav ul li a:visited {
+        color: khaki;
+        border: 2px solid black;
+      }
+      nav ul li a:hover,
+      nav ul li a:focus {
+        background-color: #f5f5ff;
+        color: #191970;
       }
 
       a:link {
@@ -43,6 +73,7 @@
         <li><a href="classes-and-ids.html"> Classes and IDs</a></li>
         <li><a href="testing-anchors.html">Testing Anchors</a></li>
         <li><a href="backgrounds-and-text.html">Backgrounds and Text</a></li>
+        <li><a href="gradients-practice.html">Gradients</a></li>
       </ul>
     </nav>
     <main>
